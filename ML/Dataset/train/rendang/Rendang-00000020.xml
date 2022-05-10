@@ -1,0 +1,26 @@
+<annotation>
+	<folder>Rendang</folder>
+	<filename>Rendang-00000020.jpg</filename>
+	<path>G:\UMM\Bangkit\capstone\DATASET\Rendang\Rendang-00000020.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>860</width>
+		<height>610</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>rendang</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>160</xmin>
+			<ymin>70</ymin>
+			<xmax>815</xmax>
+			<ymax>610</ymax>
+		</bndbox>
+	</object>
+</annotation>
