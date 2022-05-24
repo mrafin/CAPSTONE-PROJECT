@@ -27,7 +27,7 @@ class ProfileFragment : Fragment() {
 
         binding.apply {
             Glide
-                .with(requireActivity())
+                .with(view.context)
                 .load("https://st2.depositphotos.com/1006318/5909/v/450/depositphotos_59095493-stock-illustration-profile-icon-male-avatar.jpg")
                 .into(profileImage)
         }
