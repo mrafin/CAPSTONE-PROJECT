@@ -1,0 +1,26 @@
+<annotation>
+	<folder>ayam betutu</folder>
+	<filename>ayambetutu49.jpeg</filename>
+	<path>D:\capstone\task\Google-Image-Scraper-master\scraping bangkit\ayam betutu\ayambetutu49.jpeg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1260</width>
+		<height>709</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>ayam_betutu</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>346</xmin>
+			<ymin>125</ymin>
+			<xmax>942</xmax>
+			<ymax>417</ymax>
+		</bndbox>
+	</object>
+</annotation>

@@ -1,0 +1,26 @@
+<annotation>
+	<folder>gudeg</folder>
+	<filename>gudeg7.webp</filename>
+	<path>D:\capstone\task\Google-Image-Scraper-master\scraping bangkit\gudeg\gudeg7.webp</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>469</width>
+		<height>260</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>gudeg</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>65</xmin>
+			<ymin>18</ymin>
+			<xmax>363</xmax>
+			<ymax>260</ymax>
+		</bndbox>
+	</object>
+</annotation>
