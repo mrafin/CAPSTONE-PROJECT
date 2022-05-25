@@ -1,0 +1,26 @@
+<annotation>
+	<folder>gudeg</folder>
+	<filename>gudeg00000142.jpg</filename>
+	<path>D:\capstone\google_images_scraper-main\google_images_scraper-main\dataset\gudeg\gudeg00000142.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>740</width>
+		<height>816</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>gudeg</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>55</xmin>
+			<ymin>89</ymin>
+			<xmax>678</xmax>
+			<ymax>723</ymax>
+		</bndbox>
+	</object>
+</annotation>

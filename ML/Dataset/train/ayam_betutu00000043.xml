@@ -1,0 +1,26 @@
+<annotation>
+	<folder>ayam betutu</folder>
+	<filename>ayam_betutu00000043.jpg</filename>
+	<path>D:\capstone\google_images_scraper-main\google_images_scraper-main\dataset\ayam betutu\ayam_betutu00000043.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1500</width>
+		<height>997</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>ayam_betutu</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>162</xmin>
+			<ymin>76</ymin>
+			<xmax>1437</xmax>
+			<ymax>750</ymax>
+		</bndbox>
+	</object>
+</annotation>

@@ -1,0 +1,26 @@
+<annotation>
+	<folder>kerak_telor</folder>
+	<filename>kerak_telor00000022.jpg</filename>
+	<path>D:\capstone\google_images_scraper-main\google_images_scraper-main\dataset\kerak_telor\kerak_telor00000022.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>681</width>
+		<height>366</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>kerak_telor</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>172</xmin>
+			<ymin>54</ymin>
+			<xmax>543</xmax>
+			<ymax>316</ymax>
+		</bndbox>
+	</object>
+</annotation>

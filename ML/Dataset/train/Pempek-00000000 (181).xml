@@ -1,0 +1,38 @@
+<annotation>
+	<folder>Pempek</folder>
+	<filename>Pempek-00000000 (181).jpg</filename>
+	<path>G:\UMM\Bangkit\capstone\DATASET\Pempek\Pempek-00000000 (181).jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>968</width>
+		<height>645</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>pempek</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>2</xmin>
+			<ymin>89</ymin>
+			<xmax>418</xmax>
+			<ymax>645</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>pempek</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>526</xmin>
+			<ymin>167</ymin>
+			<xmax>744</xmax>
+			<ymax>285</ymax>
+		</bndbox>
+	</object>
+</annotation>

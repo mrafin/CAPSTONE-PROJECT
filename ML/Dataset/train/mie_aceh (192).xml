@@ -1,0 +1,26 @@
+<annotation>
+	<folder>mie_aceh</folder>
+	<filename>mie_aceh (192).jpg</filename>
+	<path>G:\UMM\Bangkit\capstone\DATASET\mie_aceh\mie_aceh (192).jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>360</width>
+		<height>240</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>mie_aceh</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>26</xmin>
+			<ymin>25</ymin>
+			<xmax>334</xmax>
+			<ymax>240</ymax>
+		</bndbox>
+	</object>
+</annotation>

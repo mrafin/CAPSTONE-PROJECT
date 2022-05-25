@@ -1,0 +1,26 @@
+<annotation>
+	<folder>bakso malang</folder>
+	<filename>bakso_malang00000079.jpg</filename>
+	<path>D:\capstone\google_images_scraper-main\google_images_scraper-main\dataset\bakso malang\bakso_malang00000079.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>2000</width>
+		<height>1375</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>bakso_malang</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>551</xmin>
+			<ymin>33</ymin>
+			<xmax>1848</xmax>
+			<ymax>1375</ymax>
+		</bndbox>
+	</object>
+</annotation>

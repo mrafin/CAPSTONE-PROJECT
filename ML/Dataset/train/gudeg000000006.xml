@@ -1,0 +1,26 @@
+<annotation>
+	<folder>train</folder>
+	<filename>gudeg000000006.jpg</filename>
+	<path>D:\capstone\google_images_scraper-main\google_images_scraper-main\dataset\train\gudeg000000006.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>480</width>
+		<height>640</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>gudeg</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>62</xmin>
+			<ymin>165</ymin>
+			<xmax>402</xmax>
+			<ymax>479</ymax>
+		</bndbox>
+	</object>
+</annotation>

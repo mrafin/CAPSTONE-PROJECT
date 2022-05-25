@@ -1,0 +1,26 @@
+<annotation>
+	<folder>es pisan ijo</folder>
+	<filename>Es-pisang-ijo (34).jpg</filename>
+	<path>G:\UMM\Bangkit\capstone\DATASET\es pisan ijo\Es-pisang-ijo (34).jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>822</width>
+		<height>593</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>es_pisang_ijo</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>109</xmin>
+			<ymin>83</ymin>
+			<xmax>683</xmax>
+			<ymax>436</ymax>
+		</bndbox>
+	</object>
+</annotation>

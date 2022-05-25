@@ -1,0 +1,26 @@
+<annotation>
+	<folder>train</folder>
+	<filename>ayam_betutu000000017.jpg</filename>
+	<path>D:\capstone\google_images_scraper-main\google_images_scraper-main\dataset\train\ayam_betutu000000017.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1200</width>
+		<height>727</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>ayam_betutu</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>367</xmin>
+			<ymin>152</ymin>
+			<xmax>869</xmax>
+			<ymax>562</ymax>
+		</bndbox>
+	</object>
+</annotation>
