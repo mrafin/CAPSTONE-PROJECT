@@ -1,0 +1,38 @@
+<annotation>
+	<folder>Sate Madura</folder>
+	<filename>Sate Madura-00000086.jpg</filename>
+	<path>G:\UMM\Bangkit\capstone\DATASET\Sate Madura\Sate Madura-00000086.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>253</width>
+		<height>450</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>sate_madura</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>104</xmin>
+			<ymin>107</ymin>
+			<xmax>194</xmax>
+			<ymax>192</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>sate_madura</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1</xmin>
+			<ymin>203</ymin>
+			<xmax>121</xmax>
+			<ymax>277</ymax>
+		</bndbox>
+	</object>
+</annotation>

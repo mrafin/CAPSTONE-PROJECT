@@ -1,0 +1,26 @@
+<annotation>
+	<folder>seblak</folder>
+	<filename>seblak00000043.jpg</filename>
+	<path>D:\capstone\google_images_scraper-main\google_images_scraper-main\dataset\seblak\seblak00000043.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>822</width>
+		<height>548</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>seblak</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>171</xmin>
+			<ymin>1</ymin>
+			<xmax>732</xmax>
+			<ymax>517</ymax>
+		</bndbox>
+	</object>
+</annotation>
