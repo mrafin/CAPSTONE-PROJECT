@@ -1,4 +1,4 @@
-package com.bangkit2022.kulinerin.navigation.home
+package com.bangkit2022.kulinerin.ui.navigation.home
 
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize

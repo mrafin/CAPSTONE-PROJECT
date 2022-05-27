@@ -7,13 +7,13 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.bangkit2022.kulinerin.navigation.home.HomeFragment"
+        android:name="com.bangkit2022.kulinerin.ui.navigation.home.HomeFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/navigation_account"
-        android:name="com.bangkit2022.kulinerin.navigation.profile.ProfileFragment"
+        android:name="com.bangkit2022.kulinerin.ui.navigation.profile.ProfileFragment"
         android:label="@string/title_account"
         tools:layout="@layout/fragment_profile" />
 </navigation>

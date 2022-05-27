@@ -1,4 +1,4 @@
-package com.bangkit2022.kulinerin.navigation.profile
+package com.bangkit2022.kulinerin.ui.navigation.profile
 
 import android.os.Bundle
 import android.view.LayoutInflater

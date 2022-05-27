@@ -1,10 +1,11 @@
-package com.bangkit2022.kulinerin
+package com.bangkit2022.kulinerin.ui
 
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.WindowInsets
 import android.view.WindowManager
+import com.bangkit2022.kulinerin.R
 
 class OnBoarding : AppCompatActivity() {
 
