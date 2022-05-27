@@ -1,4 +1,4 @@
-package com.bangkit2022.kulinerin.navigation.home
+package com.bangkit2022.kulinerin.ui.navigation.home
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

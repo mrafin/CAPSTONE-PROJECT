@@ -29,6 +29,11 @@
     <string name="activity">Activity</string>
     <string name="history">History</string>
     <string name="log_out">Log Out</string>
+    <string name="gender">Gender</string>
+    <string name="man">Man</string>
+    <string name="woman">Woman</string>
+    <string name="analysis">Analysis</string>
+    <string name="camera">Camera</string>
 
     <string-array name="list_city">
         <item>Malang</item>
