@@ -3,22 +3,23 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/LENOVO/Documents/BANGKIT-2022/CAPSTONE-PROJECT/MD/kulinerin/app/src/main/res/drawable/ic_baseline_cameraswitch.xml" value="0.171" />
-        <entry key="..\:/Users/LENOVO/Documents/BANGKIT-2022/CAPSTONE-PROJECT/MD/kulinerin/app/src/main/res/drawable/ic_baseline_file_upload.xml" value="0.171" />
-        <entry key="..\:/Users/LENOVO/Documents/BANGKIT-2022/CAPSTONE-PROJECT/MD/kulinerin/app/src/main/res/drawable/ic_baseline_image_search.xml" value="0.171" />
-        <entry key="..\:/Users/LENOVO/Documents/BANGKIT-2022/CAPSTONE-PROJECT/MD/kulinerin/app/src/main/res/drawable/ic_baseline_photo_camera.xml" value="0.171" />
-        <entry key="..\:/Users/LENOVO/Documents/BANGKIT-2022/CAPSTONE-PROJECT/MD/kulinerin/app/src/main/res/drawable/ic_baseline_photo_camera_black.xml" value="0.171" />
-        <entry key="..\:/Users/LENOVO/Documents/BANGKIT-2022/CAPSTONE-PROJECT/MD/kulinerin/app/src/main/res/drawable/ic_capture_image.xml" value="0.171" />
-        <entry key="..\:/Users/LENOVO/Documents/BANGKIT-2022/CAPSTONE-PROJECT/MD/kulinerin/app/src/main/res/drawable/ic_to_detail.xml" value="0.171" />
-        <entry key="..\:/Users/LENOVO/Documents/BANGKIT-2022/CAPSTONE-PROJECT/MD/kulinerin/app/src/main/res/layout/activity_camera.xml" value="0.22644927536231885" />
-        <entry key="..\:/Users/LENOVO/Documents/BANGKIT-2022/CAPSTONE-PROJECT/MD/kulinerin/app/src/main/res/layout/activity_login.xml" value="0.22644927536231885" />
-        <entry key="..\:/Users/LENOVO/Documents/BANGKIT-2022/CAPSTONE-PROJECT/MD/kulinerin/app/src/main/res/layout/activity_main.xml" value="0.22644927536231885" />
-        <entry key="..\:/Users/LENOVO/Documents/BANGKIT-2022/CAPSTONE-PROJECT/MD/kulinerin/app/src/main/res/layout/activity_onboarding.xml" value="0.22644927536231885" />
-        <entry key="..\:/Users/LENOVO/Documents/BANGKIT-2022/CAPSTONE-PROJECT/MD/kulinerin/app/src/main/res/layout/activity_register.xml" value="0.22644927536231885" />
-        <entry key="..\:/Users/LENOVO/Documents/BANGKIT-2022/CAPSTONE-PROJECT/MD/kulinerin/app/src/main/res/layout/activity_result_camera.xml" value="0.1" />
+        <entry key="..\:/TUGAS/KULIAH/Bangkit/CAPSTONE-PROJECT/MD/kulinerin/app/src/main/res/drawable/btn_unfill.xml" value="0.138" />
+        <entry key="..\:/TUGAS/KULIAH/Bangkit/CAPSTONE-PROJECT/MD/kulinerin/app/src/main/res/drawable/ic_baseline_arrow_forward_ios_24.xml" value="0.11" />
+        <entry key="..\:/TUGAS/KULIAH/Bangkit/CAPSTONE-PROJECT/MD/kulinerin/app/src/main/res/drawable/ic_to_detail.xml" value="0.11" />
+        <entry key="..\:/TUGAS/KULIAH/Bangkit/CAPSTONE-PROJECT/MD/kulinerin/app/src/main/res/layout-v28/activity_detail_food.xml" value="0.25" />
+        <entry key="..\:/TUGAS/KULIAH/Bangkit/CAPSTONE-PROJECT/MD/kulinerin/app/src/main/res/layout/activity_camera.xml" value="0.25" />
+        <entry key="..\:/TUGAS/KULIAH/Bangkit/CAPSTONE-PROJECT/MD/kulinerin/app/src/main/res/layout/activity_detail_food.xml" value="0.25" />
+        <entry key="..\:/TUGAS/KULIAH/Bangkit/CAPSTONE-PROJECT/MD/kulinerin/app/src/main/res/layout/activity_food.xml" value="0.176" />
+        <entry key="..\:/TUGAS/KULIAH/Bangkit/CAPSTONE-PROJECT/MD/kulinerin/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/TUGAS/KULIAH/Bangkit/CAPSTONE-PROJECT/MD/kulinerin/app/src/main/res/layout/activity_onboarding.xml" value="0.25" />
+        <entry key="..\:/TUGAS/KULIAH/Bangkit/CAPSTONE-PROJECT/MD/kulinerin/app/src/main/res/layout/activity_register.xml" value="0.25" />
+        <entry key="..\:/TUGAS/KULIAH/Bangkit/CAPSTONE-PROJECT/MD/kulinerin/app/src/main/res/layout/activity_result_camera.xml" value="0.18425925925925926" />
+        <entry key="..\:/TUGAS/KULIAH/Bangkit/CAPSTONE-PROJECT/MD/kulinerin/app/src/main/res/layout/fragment_home.xml" value="0.25" />
+        <entry key="..\:/TUGAS/KULIAH/Bangkit/CAPSTONE-PROJECT/MD/kulinerin/app/src/main/res/layout/row_city.xml" value="0.24259259259259258" />
+        <entry key="..\:/TUGAS/KULIAH/Bangkit/CAPSTONE-PROJECT/MD/kulinerin/app/src/main/res/layout/row_food.xml" value="0.264" />
+        <entry key="..\:/TUGAS/KULIAH/Bangkit/CAPSTONE-PROJECT/MD/kulinerin/app/src/main/res/layout/row_restaurant.xml" value="0.25" />
         <entry key="..\:/Users/LENOVO/Documents/BANGKIT-2022/CAPSTONE-PROJECT/MD/kulinerin/app/src/main/res/layout/fragment_home.xml" value="0.22644927536231885" />
         <entry key="..\:/Users/LENOVO/Documents/BANGKIT-2022/CAPSTONE-PROJECT/MD/kulinerin/app/src/main/res/layout/fragment_profile.xml" value="0.1" />
-        <entry key="..\:/Users/LENOVO/Documents/BANGKIT-2022/CAPSTONE-PROJECT/MD/kulinerin/app/src/main/res/menu/option_menu.xml" value="0.25" />
         <entry key="..\:/Users/LENOVO/Documents/BANGKIT-2022/Capstone Project/MD/kulinerin/app/src/main/res/layout/activity_login.xml" value="0.22644927536231885" />
         <entry key="..\:/Users/LENOVO/Documents/BANGKIT-2022/Capstone Project/MD/kulinerin/app/src/main/res/layout/activity_main.xml" value="0.22644927536231885" />
         <entry key="..\:/Users/LENOVO/Documents/BANGKIT-2022/Capstone Project/MD/kulinerin/app/src/main/res/layout/fragment_profile.xml" value="0.1" />

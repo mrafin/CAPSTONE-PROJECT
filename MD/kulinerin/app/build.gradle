@@ -37,6 +37,7 @@ android {
 
 dependencies {
 
+    implementation 'androidx.camera:camera-core:1.0.2'
     def camerax_version = "1.2.0-alpha01"
 
     // UI

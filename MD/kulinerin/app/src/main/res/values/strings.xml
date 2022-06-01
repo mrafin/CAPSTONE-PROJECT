@@ -34,6 +34,13 @@
     <string name="woman">Woman</string>
     <string name="analysis">Analysis</string>
     <string name="camera">Camera</string>
+    <string name="food_name">Food</string>
+    <string name="food">Food</string>
+    <string name="description">Description</string>
+    <string name="restaurant_name">Restaurant</string>
+    <string name="restaurant">Restaurant</string>
+    <string name="recipe">Recipe</string>
+    <string name="recipe_list">This is recipe ...</string>
 
     <string-array name="list_city">
         <item>Malang</item>
@@ -44,5 +51,37 @@
         <item>Sumenep</item>
         <item>Jakarta</item>
         <item>Kalimantan</item>
+    </string-array>
+
+    <string-array name="list_food">
+        <item>Bakso</item>
+        <item>Cilok</item>
+        <item>Orem - Orem</item>
+        <item>Ketoprak</item>
+        <item>Bakso</item>
+        <item>Bakso</item>
+    </string-array>
+
+    <string-array name="list_food_image">
+        <item>@drawable/bakso</item>
+        <item>@drawable/bakso</item>
+        <item>@drawable/bakso</item>
+        <item>@drawable/bakso</item>
+        <item>@drawable/bakso</item>
+        <item>@drawable/bakso</item>
+    </string-array>
+
+    <string-array name="list_food_desc">
+        <item>Bakso adalah makanan …</item>
+        <item>Bakso adalah makanan …</item>
+        <item>Bakso adalah makanan …</item>
+        <item>Bakso adalah makanan …</item>
+        <item>Bakso adalah makanan …</item>
+        <item>Bakso adalah makanan …</item>
+    </string-array>
+
+    <string-array name="list_restaurant">
+        <item>Waroeng Barokah</item>
+        <item>Melati Restaurant</item>
     </string-array>
 </resources>

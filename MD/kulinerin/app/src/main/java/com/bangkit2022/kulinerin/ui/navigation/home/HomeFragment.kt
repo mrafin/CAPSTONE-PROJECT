@@ -1,5 +1,6 @@
 package com.bangkit2022.kulinerin.ui.navigation.home
 
+import android.content.Intent
 import android.content.res.Configuration
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -11,7 +12,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.bangkit2022.kulinerin.R
 import com.bangkit2022.kulinerin.databinding.FragmentHomeBinding
 
-class HomeFragment : Fragment() {
+
+class HomeFragment : Fragment(){
 
     private var _binding: FragmentHomeBinding? = null
     private val binding get() = _binding!!
@@ -61,8 +63,10 @@ class HomeFragment : Fragment() {
 
             rvCity.setHasFixedSize(true)
             rvCity.adapter = listCityAdapter
+
         }
 
         listCityAdapter.setList(list)
     }
+
 }
