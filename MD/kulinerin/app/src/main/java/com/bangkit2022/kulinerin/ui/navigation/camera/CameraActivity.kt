@@ -1,4 +1,4 @@
-package com.bangkit2022.kulinerin.ui.camera
+package com.bangkit2022.kulinerin.ui.navigation.camera
 
 import android.content.Intent
 import android.net.Uri

@@ -1,4 +1,4 @@
-package com.bangkit2022.kulinerin.ui.camera
+package com.bangkit2022.kulinerin.ui.navigation.camera
 
 import android.content.Intent
 import android.graphics.BitmapFactory
@@ -10,8 +10,8 @@ import androidx.appcompat.app.AppCompatActivity
 import com.bangkit2022.kulinerin.R
 import com.bangkit2022.kulinerin.databinding.ActivityResultCameraBinding
 import com.bangkit2022.kulinerin.helper.rotateBitmap
+import com.bangkit2022.kulinerin.ui.food.DetailFoodActivity
 import java.io.File
-
 
 @Suppress("DEPRECATION")
 class ResultCameraActivity : AppCompatActivity() {
@@ -46,6 +46,12 @@ class ResultCameraActivity : AppCompatActivity() {
                 val imageUri: Uri = Uri.parse(selectedImg)
                 binding.previewImg.setImageURI(imageUri)
             }
+        }
+
+        binding.btnPredict.setOnClickListener {
+            val mIntent = Intent(this@ResultCameraActivity, DetailFoodActivity::class.java)
+            startActivity(mIntent)
+            finish()
         }
     }
 

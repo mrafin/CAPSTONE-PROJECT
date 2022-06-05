@@ -1,17 +1,14 @@
 package com.bangkit2022.kulinerin.ui.navigation.home
 
-import android.app.Activity
 import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import androidx.core.app.ActivityOptionsCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.bangkit2022.kulinerin.databinding.RowCityBinding
-import com.bangkit2022.kulinerin.ui.navigation.food.FoodActivity
-
+import com.bangkit2022.kulinerin.data.City
+import com.bangkit2022.kulinerin.ui.food.FoodActivity
 
 class ListCityAdapter : RecyclerView.Adapter<ListCityAdapter.ListViewHolder>() {
-
 
     private val listCity = ArrayList<City>()
 
@@ -26,11 +23,10 @@ class ListCityAdapter : RecyclerView.Adapter<ListCityAdapter.ListViewHolder>() {
         fun bind(city: City) {
             binding.tvCity.text = city.name
 
-            itemView.setOnClickListener{
+            itemView.setOnClickListener {
                 val mIntent = Intent(itemView.context, FoodActivity::class.java)
-                mIntent.putExtra(FoodActivity.EXTRA_DATA, city)
+                mIntent.putExtra(FoodActivity.EXTRA_DATA, city.name)
                 itemView.context.startActivity(mIntent)
-
             }
         }
     }
@@ -51,6 +47,5 @@ class ListCityAdapter : RecyclerView.Adapter<ListCityAdapter.ListViewHolder>() {
     }
 
     override fun getItemCount(): Int = listCity.size
-
 
 }

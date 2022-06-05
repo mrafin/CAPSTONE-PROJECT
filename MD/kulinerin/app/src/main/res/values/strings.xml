@@ -32,15 +32,17 @@
     <string name="gender">Gender</string>
     <string name="man">Man</string>
     <string name="woman">Woman</string>
-    <string name="analysis">Analysis</string>
+
+    <string name="predict">Predict</string>
     <string name="camera">Camera</string>
-    <string name="food_name">Food</string>
-    <string name="food">Food</string>
+
+    <string name="food">Foods</string>
+    <string name="food_name">Food Name</string>
     <string name="description">Description</string>
-    <string name="restaurant_name">Restaurant</string>
-    <string name="restaurant">Restaurant</string>
+    <string name="restaurant">Restaurants</string>
     <string name="recipe">Recipe</string>
-    <string name="recipe_list">This is recipe ...</string>
+    <string name="recipe_list">This is recipe …</string>
+    <string name="list_restaurant">List Restaurant</string>
 
     <string-array name="list_city">
         <item>Malang</item>
@@ -80,8 +82,5 @@
         <item>Bakso adalah makanan …</item>
     </string-array>
 
-    <string-array name="list_restaurant">
-        <item>Waroeng Barokah</item>
-        <item>Melati Restaurant</item>
-    </string-array>
+    <string name="title_activity_restaurant_maps">RestaurantMapsActivity</string>
 </resources>

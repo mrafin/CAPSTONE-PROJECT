@@ -1,9 +1,9 @@
-package com.bangkit2022.kulinerin.ui.navigation.food.restaurant
+package com.bangkit2022.kulinerin.data
 
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize
 
 @Parcelize
-data class Restaurant(
+data class City(
     var name: String
 ): Parcelable

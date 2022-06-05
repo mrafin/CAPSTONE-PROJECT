@@ -1,18 +1,16 @@
-package com.bangkit2022.kulinerin.ui.navigation.food
+package com.bangkit2022.kulinerin.ui.food
 
-import android.app.Activity
+import android.annotation.SuppressLint
 import android.content.Intent
+import android.content.res.Configuration
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import androidx.core.app.ActivityOptionsCompat
 import androidx.recyclerview.widget.RecyclerView
-import com.bangkit2022.kulinerin.databinding.RowCityBinding
 import com.bangkit2022.kulinerin.databinding.RowFoodBinding
-import com.bangkit2022.kulinerin.ui.navigation.home.City
-import com.bangkit2022.kulinerin.ui.navigation.home.ListCityAdapter
-import com.bumptech.glide.Glide
+import com.bangkit2022.kulinerin.data.Food
 
 class ListFoodAdapter : RecyclerView.Adapter<ListFoodAdapter.ListViewHolder>() {
+
     private lateinit var onItemClickCallback: OnItemClickCallback
 
     interface OnItemClickCallback {
@@ -34,10 +32,16 @@ class ListFoodAdapter : RecyclerView.Adapter<ListFoodAdapter.ListViewHolder>() {
     class ListViewHolder(private var binding: RowFoodBinding) :
         RecyclerView.ViewHolder(binding.root) {
         fun bind(food: Food) {
-            binding.tvFood.text = food.name
+            @SuppressLint("SetTextI18n")
+            if (itemView.resources.configuration.orientation == Configuration.ORIENTATION_PORTRAIT && food.name.length >= 7) {
+                binding.tvFood.text = "${food.name.substring(0, 7)}..."
+            } else {
+                binding.tvFood.text = food.name
+            }
+
             binding.imgFood.setImageResource(food.image)
 
-            itemView.setOnClickListener{
+            itemView.setOnClickListener {
                 val mIntent = Intent(itemView.context, DetailFoodActivity::class.java)
                 mIntent.putExtra(DetailFoodActivity.EXTRA_DATA, food)
                 itemView.context.startActivity(mIntent)
