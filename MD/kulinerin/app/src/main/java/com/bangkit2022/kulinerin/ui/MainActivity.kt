@@ -15,7 +15,7 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.bangkit2022.kulinerin.R
 import com.bangkit2022.kulinerin.databinding.ActivityMainBinding
-import com.bangkit2022.kulinerin.ui.camera.CameraActivity
+import com.bangkit2022.kulinerin.ui.navigation.camera.CameraActivity
 
 class MainActivity : AppCompatActivity() {
 

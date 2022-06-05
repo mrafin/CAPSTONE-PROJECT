@@ -1,6 +1,5 @@
 package com.bangkit2022.kulinerin.ui.navigation.home
 
-import android.content.Intent
 import android.content.res.Configuration
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -11,6 +10,7 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.bangkit2022.kulinerin.R
 import com.bangkit2022.kulinerin.databinding.FragmentHomeBinding
+import com.bangkit2022.kulinerin.data.City
 
 
 class HomeFragment : Fragment(){
