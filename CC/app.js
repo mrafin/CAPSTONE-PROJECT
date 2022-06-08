@@ -3,16 +3,21 @@ const bodyParser = require('body-parser');
 const db = require('./config/db');
 const food = require('./src/food');
 const User = require('./src/User');
-const cors = requir('cors');
-
+const multer = require('multer');
 const app = express();
 
-app.use(cors());
+var listener = app.listen(8080, function() {
+    console.log('Listening on port' + listener.address().port);
+});
+
 app.get('/', (req, res) => res.send('Connected'));
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
+var uploading = multer ({
+    dest: './uploads'
+});
 
 app.post("/register", async (req, res) => {
     try{
@@ -110,12 +115,17 @@ app.get('/uploads', (req, res) => {
     res.send('Upload Success');
 });
 
-app.post('/uploadfile', upload.single('dataFile'), (req, res, next) => {
+app.post('/uploads', uploading.single('dataFile'), (req, res, next) => {
     const file = req.file;
+    console.log(req.file);
     if (!file) {
        return res.status(400).send({ message: 'Please upload a file.' });
     }
     return res.send({ message: 'File uploaded successfully.', file });
  });
 
-app.listen(PORT, () => console.log('Connected'));
+app.post('/uploads', uploading.single('image'),function(req, res) {
+
+    console.log(req.file);
+    res.send(req.file);
+});

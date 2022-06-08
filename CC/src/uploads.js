@@ -1,4 +1,16 @@
-var multer = require('multer');
+var image = $("#imageid")[0].files[0];
+var formdata = new FormData();
+formdata.append('image', image);
+$.ajax({
+    url: '/uploads/',
+    data: formdata,
+    contentType: false,
+    processData: false,
+    type: 'POST',
+    'success':function(data){
+        alert(data);
+    }
+});
 
 var storage = multer.diskStorage({
     destination: function (req, file, cb) {
