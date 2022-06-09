@@ -1,0 +1,26 @@
+<annotation>
+	<folder>dataset</folder>
+	<filename>ronde (192).jpg</filename>
+	<path>G:\UMM\Bangkit\capstone\google_images_scraper\dataset\ronde (192).jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>800</width>
+		<height>533</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>ronde</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>91</xmin>
+			<ymin>119</ymin>
+			<xmax>589</xmax>
+			<ymax>370</ymax>
+		</bndbox>
+	</object>
+</annotation>
