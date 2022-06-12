@@ -75,6 +75,7 @@
             app:layout_constraintTop_toBottomOf="@id/tv_history" />
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_log_out"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"

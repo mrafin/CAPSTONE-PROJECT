@@ -1,6 +1,8 @@
 package com.bangkit2022.kulinerin.ui.navigation.camera
 
+import android.Manifest
 import android.content.Intent
+import android.content.pm.PackageManager
 import android.net.Uri
 import android.os.Build
 import android.os.Bundle
@@ -13,9 +15,11 @@ import androidx.camera.core.ImageCapture
 import androidx.camera.core.ImageCaptureException
 import androidx.camera.core.Preview
 import androidx.camera.lifecycle.ProcessCameraProvider
+import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import com.bangkit2022.kulinerin.databinding.ActivityCameraBinding
 import com.bangkit2022.kulinerin.helper.createFile
+import com.bangkit2022.kulinerin.ui.MainActivity
 
 @Suppress("DEPRECATION")
 class CameraActivity : AppCompatActivity() {
@@ -24,10 +28,40 @@ class CameraActivity : AppCompatActivity() {
     private var imageCapture: ImageCapture? = null
     private var cameraSelector: CameraSelector = CameraSelector.DEFAULT_BACK_CAMERA
 
+    override fun onRequestPermissionsResult(
+        requestCode: Int,
+        permissions: Array<String>,
+        grantResults: IntArray
+    ) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
+        if (requestCode == REQUEST_CODE_PERMISSIONS) {
+            if (!allPermissionsGranted()) {
+                Toast.makeText(
+                    this,
+                    "Not getting permission",
+                    Toast.LENGTH_SHORT
+                ).show()
+                finish()
+            }
+        }
+    }
+
+    private fun allPermissionsGranted() = REQUIRED_PERMISSIONS.all {
+        ContextCompat.checkSelfPermission(baseContext, it) == PackageManager.PERMISSION_GRANTED
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityCameraBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        if (!allPermissionsGranted()) {
+            ActivityCompat.requestPermissions(
+                this,
+                REQUIRED_PERMISSIONS,
+                REQUEST_CODE_PERMISSIONS
+            )
+        }
 
         binding.apply {
             captureImage.setOnClickListener { takePhoto() }
@@ -50,11 +84,11 @@ class CameraActivity : AppCompatActivity() {
                 // Get uri
                 val imageUri: Uri = data?.data as Uri
                 val intent = Intent(this, ResultCameraActivity::class.java)
-                intent.putExtra("image-uri", imageUri.toString())
+                intent.putExtra("imageUri", imageUri.toString())
                 startActivity(intent)
                 finish()
             } else {
-                Toast.makeText(this, "No.", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "Failed get photo", Toast.LENGTH_LONG).show()
             }
         } catch (e: java.lang.Exception) {
             Toast.makeText(this, "Oops! Sorry", Toast.LENGTH_LONG).show()
@@ -154,5 +188,7 @@ class CameraActivity : AppCompatActivity() {
 
     companion object {
         private const val PICK_IMAGE_REQUEST = 200
+        private val REQUIRED_PERMISSIONS = arrayOf(Manifest.permission.CAMERA)
+        private const val REQUEST_CODE_PERMISSIONS = 10
     }
 }
