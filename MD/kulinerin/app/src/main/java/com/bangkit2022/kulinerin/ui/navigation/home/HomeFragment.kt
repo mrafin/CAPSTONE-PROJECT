@@ -2,7 +2,6 @@ package com.bangkit2022.kulinerin.ui.navigation.home
 
 import android.content.res.Configuration
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -13,12 +12,15 @@ import com.bangkit2022.kulinerin.R
 import com.bangkit2022.kulinerin.data.City
 import com.bangkit2022.kulinerin.data.User
 import com.bangkit2022.kulinerin.databinding.FragmentHomeBinding
+import com.bangkit2022.kulinerin.helper.regex
+import com.bangkit2022.kulinerin.ui.auth.UserPreference
 
 class HomeFragment : Fragment(){
 
+    private lateinit var preference: UserPreference
+    private lateinit var listCityAdapter: ListCityAdapter
     private var _binding: FragmentHomeBinding? = null
     private val binding get() = _binding!!
-    private lateinit var listCityAdapter: ListCityAdapter
     private val listCity = ArrayList<City>()
     private val getList: ArrayList<City>
         get() {
@@ -46,14 +48,15 @@ class HomeFragment : Fragment(){
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        preference = UserPreference(requireContext())
+        user = preference.getUser()
+
         listCityAdapter = ListCityAdapter()
         listCity.addAll(getList)
         showRecyclerList(listCity)
 
-        Log.d("ppp", "onViewCreated: ${user.email}")
-
         binding.apply {
-            tvGreeting.text = user.email
+            tvGreeting.setText(getString(R.string.greeting, regex(user.email)))
         }
     }
 

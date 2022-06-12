@@ -4,7 +4,6 @@ import android.app.Application
 import android.content.ContentResolver
 import android.content.Context
 import android.graphics.Bitmap
-import android.graphics.BitmapFactory
 import android.graphics.Matrix
 import android.net.Uri
 import android.os.Environment
@@ -95,4 +94,7 @@ fun createJsonRequestBody(vararg params: Pair<String, String>) =
         "application/json; charset=utf-8".toMediaTypeOrNull(),
         JSONObject(mapOf(*params)).toString())
 
-fun removeEmail(text: String): String = text.split(" ").filter { it != "@gmail.com" }.joinToString(" ")
+fun regex(str: String?): String? {
+    val charsToRemove = 10
+    return str?.dropLast(charsToRemove)
+}

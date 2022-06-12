@@ -46,9 +46,10 @@ class FoodActivity : AppCompatActivity() {
             val nameFood = resources.getStringArray(R.array.list_food)
             val descFood = resources.getStringArray(R.array.list_food_desc)
             val imageFood = resources.obtainTypedArray(R.array.list_food_image)
+            val recipe = resources.getStringArray(R.array.list_food_recipe)
             val list = ArrayList<Food>()
             for (i in nameFood.indices) {
-                val food = Food(nameFood[i], descFood[i], imageFood.getResourceId(i, 1))
+                val food = Food(nameFood[i], descFood[i], imageFood.getResourceId(i, 1), recipe[i])
                 list.add(food)
             }
 

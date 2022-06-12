@@ -2,16 +2,14 @@ package com.bangkit2022.kulinerin.ui.navigation.profile
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.bangkit2022.kulinerin.R
 import com.bangkit2022.kulinerin.data.User
 import com.bangkit2022.kulinerin.databinding.FragmentProfileBinding
-import com.bangkit2022.kulinerin.helper.removeEmail
+import com.bangkit2022.kulinerin.helper.regex
 import com.bangkit2022.kulinerin.ui.OnBoarding
 import com.bangkit2022.kulinerin.ui.auth.UserPreference
 import com.bangkit2022.kulinerin.viewmodel.MainViewModel
@@ -45,7 +43,7 @@ class ProfileFragment : Fragment() {
                 .load("https://st2.depositphotos.com/1006318/5909/v/450/depositphotos_59095493-stock-illustration-profile-icon-male-avatar.jpg")
                 .into(profileImage)
 
-            tvName.text = removeEmail(user.email.toString()).capitalize()
+            tvName.text = regex(user.email)
             btnLogOut.setOnClickListener{
                 profileViewModel.logOut()
                 logOut()

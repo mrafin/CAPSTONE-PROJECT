@@ -18,7 +18,6 @@ import com.bangkit2022.kulinerin.viewmodel.MainViewModel
 import com.bangkit2022.kulinerin.viewmodel.MainViewModelFactory
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
-
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
