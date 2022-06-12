@@ -5,7 +5,7 @@ import com.bangkit2022.kulinerin.data.User
 
 open class UserPreference(context: Context) {
 
-    val pref = context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
+    private val pref = context.getSharedPreferences(PREFS_NAME, Context.MODE_PRIVATE)
 
     open fun saveUser(user: User) {
         val editor = pref.edit()

@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">KulinerIN</string>
-    <string name="greeting">Hi, %s</string>
+    <string name="greeting">Hi, %1$s</string>
     <string name="slogan">Take picture and know your food!</string>
     <string name="categories"><u>Categories</u></string>
     <string name="title_app">KulinerIN</string>
@@ -56,35 +56,201 @@
     </string-array>
 
     <string-array name="list_food">
-        <item>Bakso</item>
-        <item>Cilok</item>
-        <item>Orem - Orem</item>
-        <item>Ketoprak</item>
-        <item>Bakso</item>
-        <item>Bakso</item>
+        <item>Rendang</item>
+        <item>Es Pisang Ijo</item>
+        <item>Pempek</item>
+        <item>Sate Madura</item>
+        <item>Bakso Malang</item>
+        <item>Gudeg</item>
+        <item>Kerak Telor</item>
+        <item>Mie Aceh</item>
+        <item>Ronde</item>
+        <item>Seblak</item>
     </string-array>
 
     <string-array name="list_food_image">
+        <item>@drawable/rendang</item>
+        <item>@drawable/es_pisang_ijo</item>
+        <item>@drawable/pempek</item>
+        <item>@drawable/sate_madura</item>
         <item>@drawable/bakso</item>
-        <item>@drawable/bakso</item>
-        <item>@drawable/bakso</item>
-        <item>@drawable/bakso</item>
-        <item>@drawable/bakso</item>
-        <item>@drawable/bakso</item>
+        <item>@drawable/gudeg</item>
+        <item>@drawable/kerak_telor</item>
+        <item>@drawable/mie_aceh</item>
+        <item>@drawable/ronde</item>
+        <item>@drawable/seblak</item>
     </string-array>
 
     <string-array name="list_food_desc">
-        <item>Bakso adalah makanan …</item>
-        <item>Bakso adalah makanan …</item>
-        <item>Bakso adalah makanan …</item>
-        <item>Bakso adalah makanan …</item>
-        <item>Bakso adalah makanan …</item>
-        <item>Bakso adalah makanan …</item>
+        <item>Rendang merupakan salah satu masakan Indonesia yang terkenal akan kelezatannya. Rendang adalah masakan daging yang berasal dari Minangkabau Sumatra Barat Indonesia. Proses memasak rendang dengan suhu rendah dalam waktu lama, menggunakan santan dan aneka rempah-rempah khas indonesia yang sedikit pedas sehingga menambah ke khas an dan kelezatannya.</item>
+        <item>Es pisang ijo adalah kudapan khas dari Makassar, Sulawesi Selatan. Hidangan ini diolah dari buah pisang raja, ambon, atau kepok yang sudah matang</item>
+        <item>Pempek merupakan makanan khas yang terbuat dari adonan tepung serta ikan tenggiri dan digoreng hingga berwarna kuning keemasan. Pempek menjadi salah satu hidangan favorit beberapa daerah di Indonesia. Pempek memiliki beragam variasi, mulai dari pempek kapal selam, pempek adaan, pempek kulit, hingga pempek lenjer.</item>
+        <item>Sate Ayam Madura adalah makanan jenis sate yang terbuat dari bahan dasar daging ayam dan diolah dengan racikan bumbu yang khas dari Madura, Jawa Timur. Sate Ayam Madura merupakan salah satu makanan tradisional yang sangat terkenal di Indonesia. Hampir semua daerah di Indonesia terdapat penjual makanan ini.</item>
+        <item>Bakso merupakan salah satu ikon kuliner di Malang yang sangat dikenal berbagai kalangan masyarakat di nusantara, khususnya warga Malang. Layaknya primadona, wisata kuliner Malang ini banyak dijajakan di berbagai kota mulai dari pedagang kaki lima, kios, warung, depot, bahkan restoran.</item>
+        <item>Gudeg adalah salah satu masakan khas indonesia yang terkenal akan kelezatannya. Masakan ini merupakan masakan tradisional dan khas Provinsi Yogyakarta dan Jawa Tengah Indonesia. Dalam perkembangannya, masyarakat mengenal gudeg terkenal berasal dari Yogyakarta sehingga membuat kota ini dikenal dengan nama Kota Gudeg.</item>
+        <item>Kerak telor dipercaya telah ada sejak zaman penjajahan Belanda. Dulu, makanan ini diciptakan oleh masyarakat Betawi secara tak sengaja. Makanan ini tercipta setelah masyarakat Betawi atau Batavia coba-coba membuat beragam makanan dengan memanfaatkan banyaknya buah kelapa di sana.</item>
+        <item>Mie aceh adalah masakan daerah yang sudah menyebar di Indonesia, banyak warung makan aceh yang menjual mie aceh dan menjadi favorit bagi masyakat Indonesia. Mie Aceh sendiri ada dua jenis, yaitu Mie Aceh Goreng dan Mie Aceh kuah.</item>
+        <item>Wedang Ronde merupakan makanan sekaligus minuman yang hangat terdiri dari adonan tepung ketan berisi kacang tumbuk yang manis dikuahi air gula jahe. Wedang Ronde pertama kali mulai populer di daerah Jawa Tengah seperti di kota Solo dan Salatiga. Kata orang, Wedang Ronde merupakan minuman tradisional Jawa. Sebutan Wedang Ronde berasal dari bahasa Jawa. "Wedang" sendiri berarti minuman dan "Ronde" berarti adonan bulat yang biasa dibuat dari tepung ketan.</item>
+        <item>Seblak adalah makanan yang dikenal berasal dari Jawa Barat ini terbuat dari campuran bumbu cikur (kencur) dan aneka topping seperti kerupuk kuning kenyal, mi, makaroni, bakso, aci, dan cabai. Kata seblak, berasal dari bahasa sunda "segak" dan "nyegak" yang artinya menyengat.</item>
+    </string-array>
+
+    <string-array name="list_food_recipe">
+        <item>
+            1 kg daging sapi\n
+			3 butir kelapa, diambil santan kental dan santan encernya\n
+			4 lembar daun jeruk\n
+			3 batang serai, memarkan\n
+			4 butir asam kandis\n
+			100ml minyak goreng\n
+			5 gram garam\n\n
+			Bumbu rendang daging sapi 1 Kg:\n
+			60 gram bawang merah\n
+			50 gram bawangputih\n
+			250 gram cabai merah besar\n
+			100 gram lengkuas\n
+			50 gram kemiri\n
+			2 gram cengkeh\n
+        </item>
+        <item>
+            200 g tepung beras\n
+			1 sdm tepung kanji\n
+			50 g gula pasir\n
+			2 sdm air daun suji pandan\n
+			400 ml santan encer\n
+			6 buah pisang kepok/tanduk/raja sereh, kupas daun pisang/plastik tebal\n
+			100 g tepung beras\n
+			750 ml santan segar yang sedang kentalnya\n
+			1 lembar daun pandan\n
+			1/2 sdt garam\n
+			Santan yang sudah direbus\n
+			Sirop Merah Pisang Ambon\n
+			Es Batu\n
+        </item>
+        <item>
+            500 gram daging ikan tenggiri atau kakap yang sudah digiling halus\n
+			250 ml air es\n
+			1 butir kuning telur\n
+			1 sendok makan garam\n
+			1 sendok teh bawang putih bubuk\n
+			350 gr tepung sagu\n
+        </item>
+        <item>
+            4 buah paha ayam fillet, diambil dagingnya dan disisihkan kulitnya\n
+			5 sendok makan kecap manis\n
+			1 sendok makan minyak goreng\n
+			22 buah tusuk sate\n\n
+            Bahan sambal kacang:\n
+			200 gram kacang tanah kulit, disangrai, dihaluskan\n
+			3 buah cabai merah keriting, digoreng 4 butir kemiri, digoreng\n
+			2 buah cabai merah besar, digoreng\n
+			3 sendok makan gula merah sisir\n
+			1 sendok teh garam\n
+			500 ml air panas\n
+			4 buah lontong\n
+			2 sendok makan kecap manis\n
+			3 buah jeruk limau\n
+			2 sendok makan bawang merah goreng untuk taburan\n
+			15 buah cabai rawit merah, direbus\n
+			4 buah cabai merah keriting, direbus\n
+			1/4 sendok teh garam\n
+        </item>
+        <item>
+            500 gram daging sapi sengkel segar tanpa dicuci, buang uratnya dan iris-iris tipis\n
+			4 sendok teh garam kasar\n
+			1/2 sendok teh poly powder\n
+			50 gram putih telur\n
+			225 gram es serut\n
+			1 sendok teh penyedap rasa\n
+			1 siung bawang putih, dihaluskan\n
+			1/2 sendok teh merica bubuk\n
+			1 sendok makan bawang putih goreng\n
+			1/2 sendok makan bawang merah goreng\n
+			250 gram tepung sagu\n
+        </item>
+        <item>
+            1 kg nangka muda\n
+			5 butir telur ayam rebus, kupas\n
+			2 lembar daun salam\n
+			3 lembar daun jeruk\n
+			3 cm lengkuas, memarkan\n
+			120 g gula Jawa yang cokelat tua\n
+			1.5 liter santan sedang\n
+			500 ml santan kental\n
+			8 butir bawang merah\n
+			5 siung bawang putih\n
+			5 butir kemiri\n
+			1 sdm ketumbar\n
+			1 potong terasi\n
+			1/4 sdt jintan\n
+			2 sdt garam\n
+        </item>
+        <item>
+            6 sdm beras ketan, rendam semalam dan tiriska\n
+			2 buah telur bebek\n
+			2 sdt udang kering, rendam, sangrai dan haluskan\n
+			2 sdm kelapa parut setengah tua, sangrai\n
+			1 sdm bawang goreng Bumbu\n
+			1 sdm cabai merah iris, sangrai dan haluskan\n
+			1 sdt garam\n
+        </item>
+        <item>
+            400 gram mi kuning basah, siap pakai\n
+			150 gram daging sapi has dalam, iris dadu kecil\n
+			150 gram udang, belah menjadi\n
+			2 bagian 100 gram taoge\n
+			100 gram kol\n
+			1 L air\n
+			3 sdm daun bawang iris\n
+			2 sdm seledri iris\n
+			3 sdm minyak goreng\n
+			4 sdm bawang merah iris\n
+			3 sdm bawang putih iris\n
+			3 sdm cabai merah\n
+			1 sdm kunyit iris\n
+			1 sdt jintan\n
+			1 sdt merica\n
+			1 sdm garam\n
+        </item>
+        <item>150 gram tepung ketan putih\n
+			1/4 sdt garam 135 ml air hangat\n
+			2 tetes pewarna hijau tua\n
+			2 tetes pewarna merah cabai\n
+			50 gram kacang tanah kupas, sangrai\n
+			25 gram gula pasir\n
+			1/8 sdt garam Bahan sirup jahe\n
+			2 liter air\n
+			400 gram gula pasir\n
+			400 gram jahe, bakar dan memarkan\n
+			1 sdt garam\n
+			4 lembar daun pandan\n
+			6 batang serai, memarkan
+            Bahan pelengkap\n\n
+			200 gram kolang-kaling, rebus dan iris\n
+			3 roti tawar tanpa kulit, potong dadu\n
+			25 gram sagu mutiara merah, rebus\n
+			1 kaleng (200 gram) lengkeng, tiriskan\n
+        </item>
+        <item>
+            1 kg kerupuk aci/kerupuk kanji mentah warna putih Air panas untuk merendam\n
+			8 butir telur ayam\n
+			4 sdm garam\n
+			1 sdt gula pasir\n
+			1 sdt kaldu ayam bubuk\n
+			4 batang daun bawang, iris halus\n
+			8 sdm minyak goreng untuk menumis\n
+			12 buah sosis sapi, potong bulat diameter 1-2 cm\n
+			10 buah bakso sapi, potong bulat tipis\n
+			Bawang goreng secukupnya untuk taburan\n
+			20 siung bawang putih\n
+			6 butir bawang merah\n
+			2 cm kencur\n
+			5 buah cabai keriting\n
+			10 buah cabai rawit\n
+        </item>
     </string-array>
 
     <string name="title_activity_restaurant_maps">RestaurantMapsActivity</string>
     <string name="detail">Detail</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="prompt_loading">Please wait..</string>
     <string name="email_null">Email is required</string>

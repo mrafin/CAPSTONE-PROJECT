@@ -1,6 +1,7 @@
 package com.bangkit2022.kulinerin.ui.food
 
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
@@ -21,23 +22,18 @@ class DetailFoodActivity : AppCompatActivity() {
 
         listFood = intent.getParcelableExtra(EXTRA_DATA)
 
-        if (listFood == null) {
-            listFood = Food(
-                name = "Food",
-                description = "loremjnvjdvndnkjfvndfvnjnjvkvkdvksjvndsjvs",
-                image = R.drawable.bakso
-            )
-        }
-
         supportActionBar?.title = listFood?.name
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         binding.apply {
             detailTvDescription.text = listFood?.description
             listFood?.image?.let { detailImgFood.setImageResource(it) }
+            tvRecipeList.text = listFood?.recipe
             btnLocationRestaurant.setOnClickListener {
-                val mIntent = Intent(this@DetailFoodActivity, RestaurantMapsActivity::class.java)
-                startActivity(mIntent)
+                val gmmIntentUri = Uri.parse("geo:0,0?q=${listFood?.name}+restaurants")
+                val mapIntent = Intent(Intent.ACTION_VIEW, gmmIntentUri)
+                mapIntent.setPackage("com.google.android.apps.maps")
+                startActivity(mapIntent)
             }
         }
     }
