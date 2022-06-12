@@ -9,6 +9,9 @@ import android.graphics.Matrix
 import android.net.Uri
 import android.os.Environment
 import com.bangkit2022.kulinerin.R
+import okhttp3.MediaType.Companion.toMediaTypeOrNull
+import okhttp3.RequestBody
+import org.json.JSONObject
 import java.io.*
 import java.text.SimpleDateFormat
 import java.util.*
@@ -38,6 +41,23 @@ fun createFile(application: Application): File {
     ) mediaDir else application.filesDir
 
     return File(outputDirectory, "$timeStamp.jpg")
+}
+
+fun uriToFile(selectedImg: Uri, context: Context): File {
+
+    val contentResolver: ContentResolver = context.contentResolver
+    val myFile = createTempFile(context)
+    val inputStream = contentResolver.openInputStream(selectedImg) as InputStream
+    val outputStream: OutputStream = FileOutputStream(myFile)
+    val buf = ByteArray(1024)
+    var len: Int
+
+    while (inputStream.read(buf).also { len = it } > 0) outputStream.write(buf, 0, len)
+
+    outputStream.close()
+    inputStream.close()
+
+    return myFile
 }
 
 fun rotateBitmap(bitmap: Bitmap, isBackCamera: Boolean = false): Bitmap {
@@ -70,37 +90,9 @@ fun rotateBitmap(bitmap: Bitmap, isBackCamera: Boolean = false): Bitmap {
     }
 }
 
-fun uriToFile(selectedImg: Uri, context: Context): File {
+fun createJsonRequestBody(vararg params: Pair<String, String>) =
+    RequestBody.create(
+        "application/json; charset=utf-8".toMediaTypeOrNull(),
+        JSONObject(mapOf(*params)).toString())
 
-    val contentResolver: ContentResolver = context.contentResolver
-    val myFile = createTempFile(context)
-    val inputStream = contentResolver.openInputStream(selectedImg) as InputStream
-    val outputStream: OutputStream = FileOutputStream(myFile)
-    val buf = ByteArray(1024)
-    var len: Int
-
-    while (inputStream.read(buf).also { len = it } > 0) outputStream.write(buf, 0, len)
-
-    outputStream.close()
-    inputStream.close()
-
-    return myFile
-}
-
-fun reduceFileImage(file: File): File {
-
-    val bitmap = BitmapFactory.decodeFile(file.path)
-    var compressQuality = 100
-    var streamLength: Int
-
-    do {
-        val bmpStream = ByteArrayOutputStream()
-        bitmap.compress(Bitmap.CompressFormat.JPEG, compressQuality, bmpStream)
-        val bmpPicByteArray = bmpStream.toByteArray()
-        streamLength = bmpPicByteArray.size
-        compressQuality -= 5
-    } while (streamLength > 1000000)
-
-    bitmap.compress(Bitmap.CompressFormat.JPEG, compressQuality, FileOutputStream(file))
-    return file
-}
+fun removeEmail(text: String): String = text.split(" ").filter { it != "@gmail.com" }.joinToString(" ")

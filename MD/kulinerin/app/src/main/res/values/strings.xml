@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">KulinerIN</string>
-    <string name="greeting">Hi, Jackson</string>
+    <string name="greeting">Hi, %s</string>
     <string name="slogan">Take picture and know your food!</string>
     <string name="categories"><u>Categories</u></string>
     <string name="title_app">KulinerIN</string>
@@ -83,4 +83,12 @@
     </string-array>
 
     <string name="title_activity_restaurant_maps">RestaurantMapsActivity</string>
+    <string name="detail">Detail</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="prompt_loading">Please wait..</string>
+    <string name="email_null">Email is required</string>
+    <string name="password_null">Password is required</string>
+    <string name="passwordVal_null">Password is required</string>
+    <string name="passwordVal_not_match">Password not match</string>
 </resources>

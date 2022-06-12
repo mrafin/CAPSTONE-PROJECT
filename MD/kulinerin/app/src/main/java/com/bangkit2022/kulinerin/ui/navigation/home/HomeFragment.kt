@@ -2,6 +2,7 @@ package com.bangkit2022.kulinerin.ui.navigation.home
 
 import android.content.res.Configuration
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,9 +10,9 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.bangkit2022.kulinerin.R
-import com.bangkit2022.kulinerin.databinding.FragmentHomeBinding
 import com.bangkit2022.kulinerin.data.City
-
+import com.bangkit2022.kulinerin.data.User
+import com.bangkit2022.kulinerin.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment(){
 
@@ -30,7 +31,7 @@ class HomeFragment : Fragment(){
 
             return list
         }
-
+    private lateinit var user: User
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -48,6 +49,12 @@ class HomeFragment : Fragment(){
         listCityAdapter = ListCityAdapter()
         listCity.addAll(getList)
         showRecyclerList(listCity)
+
+        Log.d("ppp", "onViewCreated: ${user.email}")
+
+        binding.apply {
+            tvGreeting.text = user.email
+        }
     }
 
     override fun onDestroyView() {
@@ -63,10 +70,8 @@ class HomeFragment : Fragment(){
 
             rvCity.setHasFixedSize(true)
             rvCity.adapter = listCityAdapter
-
         }
 
         listCityAdapter.setList(list)
     }
-
 }
