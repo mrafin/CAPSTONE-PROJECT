@@ -2,7 +2,7 @@
 
 <img src="https://github.com/mrafin/CAPSTONE-PROJECT/blob/main/MD/kulinerin/app/src/main/res/drawable/logo_kulinerin.png" width="250" height="250">
 
-![GitHub contributors](https://img.shields.io/github/contributors/wahyutirta/dermate?color=%2342eff5&style=flat-square) ![GitHub forks](https://img.shields.io/github/forks/wahyutirta/dermate?color=%23000ce8&style=flat-square) ![GitHub issues](https://img.shields.io/github/issues/wahyutirta/dermate?color=%23f229d1&style=flat-square) ![GitHub all releases](https://img.shields.io/github/downloads/wahyutirta/dermate/total?color=%23ff8000&style=flat-square) ![GitHub pull requests](https://img.shields.io/github/issues-pr/wahyutirta/dermate?color=%23ff0000&style=flat-square)
+![GitHub contributors](https://img.shields.io/github/contributors/mrafin/CAPSTONE-PROJECT?color=%2342eff5&style=flat-square) ![GitHub forks](https://img.shields.io/github/forks/mrafin/CAPSTONE-PROJECT?color=%23000ce8&style=flat-square) ![GitHub issues](https://img.shields.io/github/issues/mrafin/CAPSTONE-PROJECT?color=%23f229d1&style=flat-square) ![GitHub all releases](https://img.shields.io/github/downloads/mrafin/CAPSTONE-PROJECT/total?color=%23ff8000&style=flat-square) ![GitHub pull requests](https://img.shields.io/github/issues-pr/mrafin/CAPSTONE-PROJECT?color=%23ff0000&style=flat-square)
 
 # Table of Contents
 1. [Project Description](#project-desc)
