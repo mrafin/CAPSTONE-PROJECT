@@ -44,7 +44,7 @@ ML model built with framework and libraries :
 
 # You Can Replicate <a name="how-rep"></a>
 Built Model :
-- Download our dataset from our drive[Dataset](https://github.com/mrafin/CAPSTONE-PROJECT/tree/main/ML/Dataset)
+- Download our dataset from our drive [Dataset](https://github.com/mrafin/CAPSTONE-PROJECT/tree/main/ML/Dataset)
 - Install all framework and libraries that needed
 - Run our model on your colab
 - Download model saved_model that contain .pb file
