@@ -17,7 +17,7 @@
 
 # Project Description <a name="project-desc"></a>
 
-On Boarding           |  Home Page          |  Prediction        | Result
+On Boarding           |  Home Page          |  Prediction        | Detail
 :-------------------------:|:-------------------------: |:-------------------------:|:-------------------------:
 ![](https://github.com/mrafin/CAPSTONE-PROJECT/blob/main/MD/Assets/onboard.png) | ![](https://github.com/mrafin/CAPSTONE-PROJECT/blob/main/MD/Assets/homePage.png) | ![](https://github.com/mrafin/CAPSTONE-PROJECT/blob/main/MD/Assets/result.png) | ![](https://github.com/mrafin/CAPSTONE-PROJECT/blob/main/MD/Assets/detail.png)
 
