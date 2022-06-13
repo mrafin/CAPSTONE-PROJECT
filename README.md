@@ -72,11 +72,11 @@ Note : Please make sure to update tests as appropriate.
 - [Presentation Document](https://docs.google.com/presentation/d/17P2oUqvp4PCbyA4rk91go3KFv-uYluLv/edit?usp=sharing&ouid=116758418375247377982&rtpof=true&sd=true)
 
 # Contact <a name="contact"></a>
-- Muhammad Rafi Nashrullah
+- Muhammad Rafi Nashrullah - muh.rafi.nash80@gmail.com
 - Audynalia Kogitans - audynalia48@gmail.com
 - Mochammad Andre Cahyanto - m.andrechynt@gmail.com
 - Ardana Firmansyah - ardanafirmansyah@gmail.com
-- Bayu Rizki Aufar
+- Bayu Rizki Aufar - bayurizkiaufar@gmail.com
 - Fhinka Hanifah - fhinkahanifah14@gmail.com
 
 # License <a name="license"></a>
