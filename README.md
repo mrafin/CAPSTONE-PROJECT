@@ -1,4 +1,4 @@
-# Kuliner-IN
+# KulinerIN
 
 <img src="https://github.com/mrafin/CAPSTONE-PROJECT/blob/main/MD/kulinerin/app/src/main/res/drawable/logo_kulinerin.png" width="250" height="250">
 
