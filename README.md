@@ -42,7 +42,7 @@ ML model built with framework and libraries :
 - Android Version 9+
 - Internet Connection
 
-# How Others Can Replicate <a name="how-rep"></a>
+# You Can Replicate <a name="how-rep"></a>
 - [Dataset](https://github.com/mrafin/CAPSTONE-PROJECT/tree/main/ML/Dataset)
 
 # How to Install App <a name="install"></a>
