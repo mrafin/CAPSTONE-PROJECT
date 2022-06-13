@@ -43,7 +43,15 @@ ML model built with framework and libraries :
 - Internet Connection
 
 # You Can Replicate <a name="how-rep"></a>
-- [Dataset](https://github.com/mrafin/CAPSTONE-PROJECT/tree/main/ML/Dataset)
+Built Model :
+- Download our dataset from our drive[Dataset](https://github.com/mrafin/CAPSTONE-PROJECT/tree/main/ML/Dataset)
+- Install all framework and libraries that needed
+- Run our model on your colab
+- Download model saved_model that contain .pb file
+
+Mobile Application Development :
+- compileSdkVersion 32
+- buildToolsVersion "32.0.0"
 
 # How to Install App <a name="install"></a>
 - Download apk from the [latest release](https://github.com/mrafin/CAPSTONE-PROJECT/blob/main/MD/kulinerin/app/release/app-release.apk)
