@@ -1,4 +1,4 @@
-# CAPSTONE PROJECT DETAIL
+# Kuliner-IN
 
 <img src="https://github.com/mrafin/CAPSTONE-PROJECT/blob/main/MD/kulinerin/app/src/main/res/drawable/logo_kulinerin.png" width="250" height="250">
 
@@ -8,19 +8,18 @@
 1. [Project Description](#project-desc)
 2. [Built With](#built-with)
 3. [App Prerequisites](#app-prerequisites)
-4. [How Others Can Replicate](#how-rep)
-5. [How to Install App](#install)
-6. [How to Use App](#use)
-7. [Contributing](#contributing)
+4. [How to Install App](#install)
+5. [How to Use App](#use)
+6. [Contributing](#contributing)
+7. [Others](#others)
 8. [Contact](#contact)
-9. [Others](#others)
-10. [License](#license)
+9. [License](#license)
 
 # Project Description <a name="project-desc"></a>
 
-Front Page           |  Article Page          |  Detection        | Result
+On Boarding           |  Home Page          |  Prediction        | Result
 :-------------------------:|:-------------------------: |:-------------------------:|:-------------------------:
-![](https://github.com/wahyutirta/Dermate/blob/master/image%20assets/Screenshot_2021-06-03-14-35-43-024_com.example.dermate.jpg) | ![](https://github.com/wahyutirta/Dermate/blob/master/image%20assets/Screenshot_2021-06-03-14-36-16-553_com.example.dermate.jpg) | ![](https://github.com/wahyutirta/Dermate/blob/master/image%20assets/Screenshot_2021-06-03-14-36-36-660_com.example.dermate.jpg) | ![](https://github.com/wahyutirta/Dermate/blob/master/image%20assets/Screenshot_2021-06-03-14-36-53-808_com.example.dermate.jpg)
+![](https://github.com/mrafin/CAPSTONE-PROJECT/blob/main/MD/Assets/onboard.png) | ![](https://github.com/mrafin/CAPSTONE-PROJECT/blob/main/MD/Assets/homePage.png) | ![](https://github.com/mrafin/CAPSTONE-PROJECT/blob/main/MD/Assets/result.png) | ![](https://github.com/mrafin/CAPSTONE-PROJECT/blob/main/MD/Assets/detail.png)
 
 
 
@@ -31,52 +30,33 @@ Hi, introduce **Dermate**, an automatic skin diseases diagnostic application usi
 - Google Cloud Platform Services [GCP Console](https://console.cloud.google.com/home/dashboard?authuser=1&project=able-decorator-315006)
 
 ML model built with framework and libraries :
-- Jupyter Notebook or Google Colab
-- python==3.7.10
-- tensorflow==2.5.0
-- numpy==1.19.5
-- scikit-learn==0.22.2
-- matplotlib==3.2.2
-- splitfolders==0.4.3
-- keras==2.5.0
-- [MobileNet Model Based Architecture](https://github.com/tensorflow/tensorflow/blob/v2.5.0/tensorflow/python/keras/applications/mobilenet.py#L80-L313)
+- Google Colab
+- python
+- tensorflow
+- matplotlib
+- numpy
+- object_detection
+- [SSD MobileNet V2 FPNLite 320x320](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf2_detection_zoo.md)
 
 # App Prerequisites <a name="app-prerequisites"></a>
 - Android Version 9+
 - Internet Connection
 
 # How Others Can Replicate <a name="how-rep"></a>
-
-Built Model :
-- Download our dataset from our [drive](https://drive.google.com/drive/u/1/folders/1MeHLKL6dW3_PePbT34t37k478bGrBjCp)
-- Install all framework and libraries that needed
-- Run our [model](https://github.com/wahyutirta/Dermate/blob/master/ML%20Model/skin_diseases.ipynb) on your colab
-- Download model TFlite and labels.txt
-
-Deployment Model :
-- Initialize database
-- insert data into the base for feature usage
-- Initialize the intrepeter
-- Preparing the image input (224x224x3)
-- Perform inference
-- Obtain map results
-
-Mobile Application Development :
-- compileSdkVersion 30
-- buildToolsVersion "30.0.3"
-
+- [Dataset](https://github.com/mrafin/CAPSTONE-PROJECT/tree/main/ML/Dataset)
 
 # How to Install App <a name="install"></a>
-- Download apk from the [latest release](https://github.com/wahyutirta/Dermate/releases)
+- Download apk from the [latest release](https://github.com/mrafin/CAPSTONE-PROJECT/blob/main/MD/kulinerin/app/release/app-release.apk)
 - Enable install from unknown sources
 - Install apk
 
 # How to Use App <a name="use"></a>
 - Open app
-- Tap the scan button in home page
-- Add image
-- Start recognize
-- See result
+- Register account
+- Login your account
+- Add image or upload image
+- Start predicting
+- Showing result
 
 # Contributing <a name="contributing"></a>
 Pull requests are **welcome**. For major changes, please open an issue first to discuss what you would like to change. Next steps:
@@ -88,22 +68,16 @@ Pull requests are **welcome**. For major changes, please open an issue first to 
 
 Note : Please make sure to update tests as appropriate.
 
-# Contact <a name="contact"></a>
-- Putu Wahyu Tirta Guna - wahyutirta12345@gmail.com
-- Ilham Hadisyah Ramadhan - ilhamhadisyahsmd@gmail.com
-- Stenli Tong - stenli.tong@binus.ac.id
-- Putu Althea Putri Wiradani - altheaowl@gmail.com
-- Ni Putu Yulika Trisna Wijayanti - yulika.wijayanti@gmail.com
-- Ni Made Sinta Wahyuni - madesintawahyuni@gmail.com
-- Dermate Team - dermate.team@gmail.com
-
 # Others <a name="others"></a>
-- Academic Resource Paper :
-[MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications](https://arxiv.org/abs/1704.04861)
-- Project Link :
-[Github Repository](https://github.com/wahyutirta/Dermate)
-- Presentation Document :
-[[B21-CAP0022] Bangkit Capstone “Dermate” Automatic Skin Diseases Diagnostic Application using Image Recognition](https://docs.google.com/presentation/d/1rb7HWnorYF5MOJFICkOq6rTzQGk18emL71rodVOaLmc/edit?usp=sharing)
+- [Presentation Document](https://docs.google.com/presentation/d/17P2oUqvp4PCbyA4rk91go3KFv-uYluLv/edit?usp=sharing&ouid=116758418375247377982&rtpof=true&sd=true)
+
+# Contact <a name="contact"></a>
+- Muhammad Rafi Nashrullah
+- Audynalia Kogitans - audynalia48@gmail.com
+- Mochammad Andre Cahyanto - m.andrechynt@gmail.com
+- Ardana Firmansyah - ardanafirmansyah@gmail.com
+- Bayu Rizki Aufar
+- Fhinka Hanifah - fhinkahanifah14@gmail.com
 
 # License <a name="license"></a>
-Copyright (c) 2021 Sarjana Bangkit
+Copyright (c) 2022 Bangkit Academy led by Google, GoTo, & Traveloka
