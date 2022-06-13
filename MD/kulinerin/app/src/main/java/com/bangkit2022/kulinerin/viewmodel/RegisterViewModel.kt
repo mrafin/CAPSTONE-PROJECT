@@ -9,7 +9,7 @@ import com.bangkit2022.kulinerin.api.response.RegisterResponse
 import com.bangkit2022.kulinerin.helper.createJsonRequestBody
 import kotlinx.coroutines.launch
 
-class RegisterViewModel: ViewModel() {
+class RegisterViewModel : ViewModel() {
     private val _isLoading = MutableLiveData<Boolean>()
     val isLoading: LiveData<Boolean> = _isLoading
 
@@ -24,8 +24,11 @@ class RegisterViewModel: ViewModel() {
             _isLoading.value = true
 
             try {
-                val response = ApiConfig.getApiServiceForAll().register(createJsonRequestBody(
-                    "email" to email, "password" to password))
+                val response = ApiConfig.getApiServiceForAll().register(
+                    createJsonRequestBody(
+                        "email" to email, "password" to password
+                    )
+                )
 
                 _isLoading.value = false
                 result.postValue(response)

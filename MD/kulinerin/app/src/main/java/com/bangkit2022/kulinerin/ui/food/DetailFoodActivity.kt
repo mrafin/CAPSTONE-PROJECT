@@ -5,10 +5,8 @@ import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
-import com.bangkit2022.kulinerin.R
 import com.bangkit2022.kulinerin.databinding.ActivityDetailFoodBinding
 import com.bangkit2022.kulinerin.data.Food
-import com.bangkit2022.kulinerin.ui.food.restaurant.RestaurantMapsActivity
 
 class DetailFoodActivity : AppCompatActivity() {
 
@@ -29,6 +27,7 @@ class DetailFoodActivity : AppCompatActivity() {
             detailTvDescription.text = listFood?.description
             listFood?.image?.let { detailImgFood.setImageResource(it) }
             tvRecipeList.text = listFood?.recipe
+
             btnLocationRestaurant.setOnClickListener {
                 val gmmIntentUri = Uri.parse("geo:0,0?q=${listFood?.name}+restaurants")
                 val mapIntent = Intent(Intent.ACTION_VIEW, gmmIntentUri)

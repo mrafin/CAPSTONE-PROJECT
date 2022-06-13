@@ -44,7 +44,7 @@ class ProfileFragment : Fragment() {
                 .into(profileImage)
 
             tvName.text = regex(user.email)
-            btnLogOut.setOnClickListener{
+            btnLogOut.setOnClickListener {
                 profileViewModel.logOut()
                 logOut()
             }

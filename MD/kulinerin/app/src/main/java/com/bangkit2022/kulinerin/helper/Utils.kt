@@ -9,7 +9,7 @@ import android.net.Uri
 import android.os.Environment
 import com.bangkit2022.kulinerin.R
 import okhttp3.MediaType.Companion.toMediaTypeOrNull
-import okhttp3.RequestBody
+import okhttp3.RequestBody.Companion.toRequestBody
 import org.json.JSONObject
 import java.io.*
 import java.text.SimpleDateFormat
@@ -90,9 +90,8 @@ fun rotateBitmap(bitmap: Bitmap, isBackCamera: Boolean = false): Bitmap {
 }
 
 fun createJsonRequestBody(vararg params: Pair<String, String>) =
-    RequestBody.create(
-        "application/json; charset=utf-8".toMediaTypeOrNull(),
-        JSONObject(mapOf(*params)).toString())
+    JSONObject(mapOf(*params)).toString()
+        .toRequestBody("application/json; charset=utf-8".toMediaTypeOrNull())
 
 fun regex(str: String?): String? {
     val charsToRemove = 10

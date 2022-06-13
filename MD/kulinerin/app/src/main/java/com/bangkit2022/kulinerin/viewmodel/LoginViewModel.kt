@@ -26,7 +26,8 @@ class LoginViewModel(private val pref: UserPreference) : ViewModel() {
             try {
                 val response = ApiConfig.getApiServiceForAll().login(
                     createJsonRequestBody(
-                    "email" to email, "password" to password)
+                        "email" to email, "password" to password
+                    )
                 )
 
                 _isLoading.value = false
@@ -45,7 +46,8 @@ class LoginViewModel(private val pref: UserPreference) : ViewModel() {
     }
 }
 
-class LoginViewModelFactory(private val pref: UserPreference) : ViewModelProvider.NewInstanceFactory() {
+class LoginViewModelFactory(private val pref: UserPreference) :
+    ViewModelProvider.NewInstanceFactory() {
     @Suppress("UNCHECKED_CAST")
     override fun <T : ViewModel> create(modelClass: Class<T>): T {
         return when {
