@@ -15,13 +15,15 @@ import com.bangkit2022.kulinerin.databinding.FragmentHomeBinding
 import com.bangkit2022.kulinerin.helper.regex
 import com.bangkit2022.kulinerin.ui.auth.UserPreference
 
-class HomeFragment : Fragment(){
+class HomeFragment : Fragment() {
 
     private lateinit var preference: UserPreference
     private lateinit var listCityAdapter: ListCityAdapter
     private var _binding: FragmentHomeBinding? = null
     private val binding get() = _binding!!
     private val listCity = ArrayList<City>()
+    private lateinit var user: User
+
     private val getList: ArrayList<City>
         get() {
             val dataCity = resources.getStringArray(R.array.list_city)
@@ -33,7 +35,6 @@ class HomeFragment : Fragment(){
 
             return list
         }
-    private lateinit var user: User
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -56,7 +57,7 @@ class HomeFragment : Fragment(){
         showRecyclerList(listCity)
 
         binding.apply {
-            tvGreeting.setText(getString(R.string.greeting, regex(user.email)))
+            tvGreeting.text = getString(R.string.greeting, regex(user.email))
         }
     }
 

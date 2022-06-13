@@ -9,7 +9,7 @@ import com.bangkit2022.kulinerin.api.response.PredictResult
 import kotlinx.coroutines.launch
 import okhttp3.MultipartBody
 
-class ResultCameraViewModel: ViewModel() {
+class ResultCameraViewModel : ViewModel() {
     private val _errText = MutableLiveData<String>()
     val errText: LiveData<String> = _errText
 
@@ -19,7 +19,7 @@ class ResultCameraViewModel: ViewModel() {
     private val _result = MutableLiveData<PredictResult>()
     val result: LiveData<PredictResult> = _result
 
-    fun uploadImage(img: MultipartBody.Part){
+    fun uploadImage(img: MultipartBody.Part) {
 
         viewModelScope.launch {
             _isLoading.value = true

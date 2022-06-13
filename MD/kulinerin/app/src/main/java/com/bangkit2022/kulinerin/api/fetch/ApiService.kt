@@ -10,6 +10,7 @@ import retrofit2.http.POST
 import retrofit2.http.Part
 
 interface ApiService {
+
     @Multipart
     @POST("predict")
     suspend fun uploadImage(

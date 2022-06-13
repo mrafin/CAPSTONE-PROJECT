@@ -18,7 +18,8 @@ class MainViewModel(private val pref: UserPreference) : ViewModel() {
     fun logOut() = pref.clearUser()
 }
 
-class MainViewModelFactory(private val pref: UserPreference) : ViewModelProvider.NewInstanceFactory() {
+class MainViewModelFactory(private val pref: UserPreference) :
+    ViewModelProvider.NewInstanceFactory() {
     @Suppress("UNCHECKED_CAST")
     override fun <T : ViewModel> create(modelClass: Class<T>): T {
         return when {

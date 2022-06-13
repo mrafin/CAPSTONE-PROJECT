@@ -1,5 +1,6 @@
 package com.bangkit2022.kulinerin.ui.navigation.camera
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -26,13 +27,14 @@ class BottomDialogFragment : BottomSheetDialogFragment() {
         return binding.root
     }
 
+    @SuppressLint("ResourceType", "Recycle")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
         val getData = arguments?.getString(EXTRA_DATA)
         binding.tvFoodName.text = getData
 
-        when(binding.tvFoodName.text.toString()){
+        when (binding.tvFoodName.text.toString()) {
             "Rendang" -> {
                 food = Food(
                     resources.getStringArray(R.array.list_food)[0],
