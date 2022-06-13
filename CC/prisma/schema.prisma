@@ -1,0 +1,60 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        Int       @id @default(autoincrement())
+  email     String    @unique
+  password  String    @db.VarChar(255)
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  histories History[]
+}
+
+model History {
+  id       Int    @id @default(autoincrement())
+  foodName String
+  user     User   @relation(fields: [userId], references: [id])
+  userId   Int
+}
+
+model Image {
+  id     Int    @id @default(autoincrement())
+  url    String
+  food   Food   @relation(fields: [foodId], references: [id])
+  foodId Int
+}
+
+model Food {
+  id          Int                  @id @default(autoincrement())
+  name        String
+  description String               @db.Text
+  recipe      String               @db.Text
+  restaurants FoodsOnRestaurants[]
+  images      Image[]
+}
+
+model Restaurant {
+  id    Int                  @id @default(autoincrement())
+  name  String
+  lat   String
+  long  String
+  foods FoodsOnRestaurants[]
+}
+
+model FoodsOnRestaurants {
+  food         Food       @relation(fields: [foodId], references: [id])
+  foodId       Int
+  restaurant   Restaurant @relation(fields: [restaurantId], references: [id])
+  restaurantId Int
+
+  @@id([foodId, restaurantId])
+}
